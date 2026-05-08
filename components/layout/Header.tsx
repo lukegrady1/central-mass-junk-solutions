@@ -33,7 +33,7 @@ export function Header() {
           scrolled ? 'bg-white shadow-soft' : 'bg-white/80 backdrop-blur-sm',
         )}
       >
-        <Container className="h-20 flex items-center justify-between gap-4">
+        <Container className="h-20 sm:h-24 lg:h-28 flex items-center justify-between gap-4">
           <Link href="/" className="flex items-center" aria-label={`${BUSINESS.name} home`}>
             <Image
               src="/logo.png"
@@ -41,7 +41,7 @@ export function Header() {
               width={1710}
               height={1546}
               priority
-              className="h-12 w-auto sm:h-14"
+              className="h-16 w-auto sm:h-20 lg:h-24"
             />
           </Link>
 
