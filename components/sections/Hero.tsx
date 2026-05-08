@@ -108,18 +108,6 @@ export function Hero() {
             </div>
           </motion.div>
         </div>
-
-        {/* Truck badge — decorative */}
-        <motion.div
-          aria-hidden
-          className="hidden lg:flex absolute bottom-12 left-1/2 -translate-x-1/2 items-center gap-3 px-5 py-3 rounded-full bg-white shadow-soft border border-slate-100"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 1.2 }}
-        >
-          <Truck className="w-5 h-5 text-accent-500" />
-          <span className="text-sm font-medium text-slate-700">Same-day pickup • Hubbardston-based</span>
-        </motion.div>
       </Container>
     </section>
   )
