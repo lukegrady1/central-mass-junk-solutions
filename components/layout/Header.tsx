@@ -1,8 +1,9 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useEffect, useState } from 'react'
-import { Truck, Menu, X, Phone } from 'lucide-react'
+import { Menu, X, Phone } from 'lucide-react'
 import { BUSINESS, NAV_LINKS } from '@/lib/constants'
 import { Container } from '@/components/ui/Container'
 import { Button } from '@/components/ui/Button'
@@ -33,12 +34,15 @@ export function Header() {
         )}
       >
         <Container className="h-20 flex items-center justify-between gap-4">
-          <Link href="/" className="flex items-center gap-2 font-display font-bold text-xl text-primary-900">
-            <span className="w-9 h-9 rounded-xl bg-primary-900 text-white flex items-center justify-center">
-              <Truck className="w-5 h-5" />
-            </span>
-            <span className="hidden sm:inline">{BUSINESS.shortName}</span>
-            <span className="sm:hidden">CMJS</span>
+          <Link href="/" className="flex items-center" aria-label={`${BUSINESS.name} home`}>
+            <Image
+              src="/logo.png"
+              alt={BUSINESS.name}
+              width={1710}
+              height={1546}
+              priority
+              className="h-12 w-auto sm:h-14"
+            />
           </Link>
 
           <nav className="hidden lg:flex items-center gap-8" aria-label="Primary">

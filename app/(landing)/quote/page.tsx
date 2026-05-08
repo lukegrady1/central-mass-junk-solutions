@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Truck, Phone, Shield, Star, Leaf } from 'lucide-react'
 import { Container } from '@/components/ui/Container'
 import { MultiStepQuote } from '@/components/forms/MultiStepQuote'
@@ -16,11 +17,8 @@ export default function QuotePage() {
     <div className="bg-bg-alt min-h-screen">
       <header className="bg-white border-b border-slate-200">
         <Container className="h-16 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 font-display font-bold text-lg text-primary-900">
-            <span className="w-8 h-8 rounded-xl bg-primary-900 text-white flex items-center justify-center">
-              <Truck className="w-4 h-4" />
-            </span>
-            <span className="hidden sm:inline">{BUSINESS.shortName}</span>
+          <Link href="/" className="flex items-center" aria-label={`${BUSINESS.name} home`}>
+            <Image src="/logo.png" alt={BUSINESS.name} width={1710} height={1546} className="h-10 w-auto" priority />
           </Link>
           <a href={BUSINESS.phoneHref} className="inline-flex items-center gap-2 text-primary-900 font-semibold hover:text-accent-600">
             <Phone className="w-4 h-4" /> {BUSINESS.phone}
