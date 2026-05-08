@@ -4,7 +4,7 @@ const BASE = 'https://centralmassjunk.com'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date()
-  const routes = ['', '/services', '/pricing', '/about', '/contact', '/quote']
+  const routes = ['', '/services', '/gallery', '/pricing', '/about', '/contact', '/quote']
   return routes.map((p) => ({
     url: `${BASE}${p}`,
     lastModified: now,

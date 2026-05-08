@@ -33,9 +33,8 @@ export const BUSINESS = {
 
 export const NAV_LINKS = [
   { label: 'Services', href: '/services' },
+  { label: 'Gallery', href: '/gallery' },
   { label: 'Pricing', href: '/pricing' },
-  { label: 'Service Area', href: '/service-area' },
   { label: 'About', href: '/about' },
-  { label: 'Reviews', href: '/reviews' },
   { label: 'Contact', href: '/contact' },
 ] as const

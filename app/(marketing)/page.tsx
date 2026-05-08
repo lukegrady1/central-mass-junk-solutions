@@ -2,6 +2,7 @@ import { Hero } from '@/components/sections/Hero'
 import { TrustBar } from '@/components/sections/TrustBar'
 import { HowItWorks } from '@/components/sections/HowItWorks'
 import { ServicesGrid } from '@/components/sections/ServicesGrid'
+import { GalleryShowcase } from '@/components/sections/GalleryShowcase'
 import { PricingPreview } from '@/components/sections/PricingPreview'
 import { ServiceArea } from '@/components/sections/ServiceArea'
 import { Reviews } from '@/components/sections/Reviews'
@@ -17,6 +18,7 @@ export default function HomePage() {
       <TrustBar />
       <HowItWorks />
       <ServicesGrid />
+      <GalleryShowcase />
       <PricingPreview />
       <ServiceArea />
       <Reviews />
