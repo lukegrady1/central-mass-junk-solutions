@@ -1,13 +1,13 @@
-import { CheckCircle2, Clock, Shield, MapPin } from 'lucide-react'
+import { Clock, Shield, MapPin, Recycle } from 'lucide-react'
 import { Container } from '@/components/ui/Container'
 import { BUSINESS } from '@/lib/constants'
 
 export function TrustBar() {
   const stats = [
-    { icon: CheckCircle2, label: `${BUSINESS.jobsCompleted} jobs completed` },
-    { icon: Clock, label: 'Same-day pickup available' },
-    { icon: Shield, label: '100% satisfaction guarantee' },
-    { icon: MapPin, label: `${BUSINESS.yearsLocal} years serving ${BUSINESS.region}` },
+    { icon: Clock, label: 'Same-day & next-day pickup' },
+    { icon: MapPin, label: `Based in ${BUSINESS.address.city}, MA` },
+    { icon: Shield, label: 'Locally owned & operated' },
+    { icon: Recycle, label: 'Donation & recycling first' },
   ]
   return (
     <div className="bg-white border-y border-slate-200">

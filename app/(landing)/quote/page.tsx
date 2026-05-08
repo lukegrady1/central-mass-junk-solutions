@@ -46,24 +46,23 @@ export default function QuotePage() {
           <aside className="lg:col-span-4 space-y-4">
             <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-soft">
               <div className="flex items-center gap-2 mb-3">
-                <Star className="w-5 h-5 text-yellow-400 fill-yellow-400" />
-                <span className="font-display font-bold text-primary-900">{BUSINESS.rating} from {BUSINESS.reviewCount}+ reviews</span>
+                <Star className="w-5 h-5 text-accent-500 fill-accent-500" />
+                <span className="font-display font-bold text-primary-900">Why folks call us</span>
               </div>
-              <p className="text-sm text-slate-600 italic leading-relaxed">
-                "Texted them a photo at 9am. Truck was here by 1pm. Cleared 20 years of junk in two hours."
+              <p className="text-sm text-slate-600 leading-relaxed">
+                We're a local crew based in Hubbardston. Real names, real faces, no national-chain runaround. Send a photo, get a price, we show up.
               </p>
-              <p className="mt-2 text-xs text-slate-500">— Sarah K., Leominster</p>
             </div>
 
             <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-soft">
               <ul className="space-y-3 text-sm text-slate-700">
                 <li className="flex items-center gap-3">
                   <Shield className="w-4 h-4 text-success shrink-0" />
-                  Licensed & fully insured
+                  Locally owned & operated
                 </li>
                 <li className="flex items-center gap-3">
                   <Leaf className="w-4 h-4 text-success shrink-0" />
-                  70% diverted from landfill
+                  Donation & recycling first
                 </li>
                 <li className="flex items-center gap-3">
                   <Truck className="w-4 h-4 text-success shrink-0" />

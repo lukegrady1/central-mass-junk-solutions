@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 import { Camera, Phone, Shield, Leaf, Truck } from 'lucide-react'
 import { Container } from '@/components/ui/Container'
 import { Button } from '@/components/ui/Button'
-import { StarRating } from '@/components/shared/StarRating'
 import { InstantQuoteForm } from '@/components/forms/InstantQuoteForm'
 import { BUSINESS } from '@/lib/constants'
 
@@ -74,16 +73,16 @@ export function Hero() {
               transition={{ duration: 0.5, delay: 0.9 }}
             >
               <div className="flex items-center gap-2">
-                <StarRating rating={5} size="sm" />
-                <span><strong className="text-primary-900">{BUSINESS.rating}</strong> · {BUSINESS.reviewCount}+ Google Reviews</span>
+                <Truck className="w-4 h-4 text-accent-500" />
+                Locally owned in Hubbardston
               </div>
               <div className="flex items-center gap-2">
                 <Shield className="w-4 h-4 text-success" />
-                Licensed & Insured
+                Always available — call or text
               </div>
               <div className="flex items-center gap-2">
                 <Leaf className="w-4 h-4 text-success" />
-                Eco-Friendly Disposal
+                Eco-friendly disposal
               </div>
             </motion.div>
           </motion.div>
@@ -119,7 +118,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 1.2 }}
         >
           <Truck className="w-5 h-5 text-accent-500" />
-          <span className="text-sm font-medium text-slate-700">{BUSINESS.jobsCompleted} jobs completed</span>
+          <span className="text-sm font-medium text-slate-700">Same-day pickup • Hubbardston-based</span>
         </motion.div>
       </Container>
     </section>

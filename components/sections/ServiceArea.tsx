@@ -12,14 +12,14 @@ export function ServiceArea() {
         <SectionHeading
           eyebrow="Service Area"
           title={<>Proudly Serving <span className="text-accent-500">{BUSINESS.region}</span></>}
-          description="Based in Leominster, covering 30+ cities and towns across north-central Massachusetts."
+          description="Based in Hubbardston, covering north-central Massachusetts and beyond. Most jobs land within a 30-minute drive."
         />
 
         <Reveal>
           <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-soft">
             <iframe
               title="Service area map"
-              src="https://www.google.com/maps?q=Leominster,MA&z=10&output=embed"
+              src="https://www.google.com/maps?q=Hubbardston,MA&z=10&output=embed"
               width="100%"
               height="420"
               loading="lazy"

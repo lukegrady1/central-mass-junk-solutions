@@ -1,34 +1,34 @@
 export const BUSINESS = {
   name: 'Central Mass Junk Solutions',
   shortName: 'Central Mass Junk',
-  tagline: 'Same-day junk removal across Central Massachusetts.',
-  phone: '(XXX) XXX-XXXX',
-  phoneHref: 'tel:+1XXXXXXXXXX',
-  email: 'hello@centralmassjunk.com',
+  tagline: 'If you have unwanted junk, we have the solution.',
+  phone: '(978) 696-7510',
+  phoneHref: 'tel:+19786967510',
+  smsHref: 'sms:+19786967510',
+  email: 'centralmassjunksolutions@gmail.com',
   address: {
-    street: '123 Main Street',
-    city: 'Leominster',
+    city: 'Hubbardston',
     state: 'MA',
-    zip: '01453',
+    zip: '01452',
   },
-  hours: 'Open Today: 7 AM – 7 PM',
+  hours: 'Always open — call or text 24/7',
   region: 'Central Massachusetts',
+  // Hubbardston-centric — adjust as the service radius is confirmed
   serviceCities: [
-    'Leominster', 'Fitchburg', 'Worcester', 'Gardner', 'Lunenburg',
-    'Sterling', 'Lancaster', 'Clinton', 'Westminster', 'Ashburnham',
-    'Townsend', 'Princeton', 'Holden', 'West Boylston', 'Boylston',
-    'Shirley', 'Harvard', 'Bolton', 'Berlin', 'Hubbardston',
+    'Hubbardston', 'Gardner', 'Westminster', 'Templeton', 'Phillipston',
+    'Princeton', 'Barre', 'Rutland', 'Holden', 'Sterling',
+    'Ashburnham', 'Winchendon', 'Petersham', 'Athol', 'Royalston',
+    'Leominster', 'Fitchburg', 'Lunenburg', 'Lancaster', 'Clinton',
   ],
-  rating: 4.9,
-  reviewCount: 200,
-  yearsLocal: 12,
-  jobsCompleted: '5,000+',
+  // Real numbers from the public Facebook page (319 followers, 2 reviews as of writing)
+  followers: 319,
+  reviewCount: 2,
   socialUrls: {
-    facebook: 'https://facebook.com',
-    instagram: 'https://instagram.com',
-    google: 'https://google.com',
+    facebook: 'https://www.facebook.com/p/Central-Mass-junk-solutions-61573042354546/',
+    instagram: 'https://www.instagram.com/central.mass.junk.solutions',
   },
-  licenseNumber: 'MA-HIC #XXXXXX',
+  // VERIFY before launch — placeholder until license info is provided
+  licenseNumber: 'License # pending',
 } as const
 
 export const NAV_LINKS = [

@@ -39,18 +39,16 @@ const localBusinessJsonLd = {
   telephone: BUSINESS.phone,
   address: {
     '@type': 'PostalAddress',
-    streetAddress: BUSINESS.address.street,
     addressLocality: BUSINESS.address.city,
     addressRegion: BUSINESS.address.state,
     postalCode: BUSINESS.address.zip,
     addressCountry: 'US',
   },
+  email: BUSINESS.email,
+  url: 'https://centralmassjunk.com',
+  sameAs: [BUSINESS.socialUrls.facebook, BUSINESS.socialUrls.instagram],
   areaServed: BUSINESS.region,
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: BUSINESS.rating,
-    reviewCount: BUSINESS.reviewCount,
-  },
+  openingHours: 'Mo-Su 00:00-23:59',
 }
 
 export default function RootLayout({

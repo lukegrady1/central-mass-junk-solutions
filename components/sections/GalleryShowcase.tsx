@@ -39,7 +39,7 @@ export function GalleryShowcase() {
                 </h3>
                 <p className="mt-4 text-slate-600 leading-relaxed text-lg">{hero.blurb}</p>
                 {hero.stats && (
-                  <ul className="mt-6 grid grid-cols-3 gap-3">
+                  <ul className="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-3">
                     {hero.stats.volume && (
                       <li className="bg-bg-alt rounded-xl p-3 border border-slate-200 text-center">
                         <Truck className="w-4 h-4 text-accent-600 mx-auto" />

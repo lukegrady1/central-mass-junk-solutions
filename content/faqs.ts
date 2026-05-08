@@ -31,7 +31,7 @@ export const HOME_FAQS: FAQ[] = [
   },
   {
     q: 'What\'s your service area?',
-    a: 'All of Central Mass — Leominster, Fitchburg, Worcester, Gardner, and most surrounding towns. If you\'re close, just call. We almost always cover it.',
+    a: 'We\'re based in Hubbardston, MA and cover most of north-central Mass — Gardner, Westminster, Templeton, Princeton, Barre, Rutland, Holden, and beyond. If you\'re close, just call. We almost always cover it.',
   },
 ]
 
@@ -54,33 +54,3 @@ export const PRICING_FAQS: FAQ[] = [
   },
 ]
 
-export const TESTIMONIALS = [
-  {
-    name: 'Sarah K.',
-    neighborhood: 'Leominster',
-    date: 'Apr 2026',
-    rating: 5,
-    quote: 'Texted them a photo of my garage at 9am. Truck was here by 1pm. They cleared 20 years of junk in under two hours and swept the floor. Unreal.',
-  },
-  {
-    name: 'Mike D.',
-    neighborhood: 'Fitchburg',
-    date: 'Mar 2026',
-    rating: 5,
-    quote: 'Quoted me less than half what 1-800-GOT-JUNK wanted. Showed up on time, polite crew, and they donated my old couch instead of dumping it.',
-  },
-  {
-    name: 'Lauren P.',
-    neighborhood: 'Worcester',
-    date: 'Mar 2026',
-    rating: 5,
-    quote: 'I manage three rental properties and they are now my only call. Reliable, insured, and they hand me a receipt every time.',
-  },
-  {
-    name: 'Tom R.',
-    neighborhood: 'Gardner',
-    date: 'Feb 2026',
-    rating: 5,
-    quote: 'They took out a hot tub no one else would touch. Disassembled it on the spot. Driveway looked better than when they got here.',
-  },
-] as const

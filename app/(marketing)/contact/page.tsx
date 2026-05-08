@@ -56,15 +56,15 @@ export default function ContactPage() {
                   <li className="flex items-center gap-3 text-slate-700">
                     <span className="w-10 h-10 rounded-xl bg-white border border-slate-200 flex items-center justify-center"><MapPin className="w-4 h-4 text-accent-500" /></span>
                     <span>
-                      <span className="block text-xs text-slate-500">Office</span>
-                      <span className="font-semibold">{BUSINESS.address.street}, {BUSINESS.address.city} {BUSINESS.address.state}</span>
+                      <span className="block text-xs text-slate-500">Based in</span>
+                      <span className="font-semibold">{BUSINESS.address.city}, {BUSINESS.address.state} {BUSINESS.address.zip}</span>
                     </span>
                   </li>
                   <li className="flex items-center gap-3 text-slate-700">
                     <span className="w-10 h-10 rounded-xl bg-white border border-slate-200 flex items-center justify-center"><Clock className="w-4 h-4 text-accent-500" /></span>
                     <span>
                       <span className="block text-xs text-slate-500">Hours</span>
-                      <span className="font-semibold">Mon–Sat 7 AM – 7 PM</span>
+                      <span className="font-semibold">{BUSINESS.hours}</span>
                     </span>
                   </li>
                 </ul>
@@ -72,8 +72,8 @@ export default function ContactPage() {
 
               <div className="rounded-2xl overflow-hidden border border-slate-200">
                 <iframe
-                  title="Office location"
-                  src="https://www.google.com/maps?q=Leominster,MA&z=12&output=embed"
+                  title="Service area"
+                  src="https://www.google.com/maps?q=Hubbardston,MA&z=11&output=embed"
                   width="100%"
                   height="280"
                   loading="lazy"

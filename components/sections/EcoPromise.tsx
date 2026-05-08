@@ -14,20 +14,20 @@ export function EcoPromise() {
                 <div className="grid grid-cols-2 gap-4 p-8 w-full max-w-sm">
                   <div className="bg-white rounded-2xl p-5 shadow-soft text-center">
                     <Heart className="w-8 h-8 text-success mx-auto" />
-                    <p className="mt-2 font-display text-2xl font-bold text-primary-900">12T</p>
-                    <p className="text-xs text-slate-500">Donated 2025</p>
+                    <p className="mt-2 font-display text-base font-bold text-primary-900">Donate first</p>
+                    <p className="text-xs text-slate-500">Goodwill, ReStore, churches</p>
                   </div>
                   <div className="bg-white rounded-2xl p-5 shadow-soft text-center">
                     <Recycle className="w-8 h-8 text-success mx-auto" />
-                    <p className="mt-2 font-display text-2xl font-bold text-primary-900">70%</p>
-                    <p className="text-xs text-slate-500">Diverted</p>
+                    <p className="mt-2 font-display text-base font-bold text-primary-900">Recycle second</p>
+                    <p className="text-xs text-slate-500">Metals, electronics, mattresses</p>
                   </div>
                   <div className="col-span-2 bg-white rounded-2xl p-5 shadow-soft text-center">
                     <Leaf className="w-8 h-8 text-success mx-auto" />
                     <p className="mt-2 font-display text-base font-bold text-primary-900">
-                      Local charity partners
+                      Landfill last
                     </p>
-                    <p className="text-xs text-slate-500">Habitat ReStore · Salvation Army · Big Brothers</p>
+                    <p className="text-xs text-slate-500">Only what truly can't be reused</p>
                   </div>
                 </div>
               </div>
@@ -43,11 +43,11 @@ export function EcoPromise() {
               Less Landfill. <span className="text-success">More Donations.</span>
             </h2>
             <p className="mt-5 text-lg text-slate-600 leading-relaxed">
-              We donate usable items to local charities, recycle metals and electronics, and only landfill what truly can't be reused. Roughly 70% of every load we haul gets a second life.
+              We donate usable items to local charities, recycle metals and electronics, and only landfill what truly can't be reused. Whenever we can keep something out of the dump, we do.
             </p>
             <ul className="mt-6 space-y-3 text-slate-700">
               {[
-                'Furniture & appliances → Habitat for Humanity ReStore',
+                'Furniture & appliances → Habitat for Humanity ReStore and local charities',
                 'Metals & electronics → certified recyclers',
                 'Mattresses → state-certified mattress recycling',
                 'Yard waste → composted, never landfilled',
